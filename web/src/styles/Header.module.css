@@ -1,0 +1,87 @@
+/* D:\Python\web\styles\Header.module.css */
+
+.header {
+  /* Header chiếm toàn bộ chiều ngang */
+  width: 100%;
+  display: flex; 
+  /* ⭐ CĂN GIỮA NỘI DUNG CONTAINER BÊN TRONG */
+  justify-content: center; 
+  align-items: center; 
+  height: 60px; 
+  background-color: #f4edff; 
+  color: white; 
+}
+
+/* ⭐ Dùng để giới hạn chiều rộng VÀ CĂN GIỮA NỘI DUNG */
+.headerContentWrapper {
+  display: flex;
+  align-items: center;
+  /* Đẩy Search và Auth ra hai bên */
+  justify-content: space-between; 
+  /* Chiều rộng thống nhất */
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto; /* ĐẢM BẢO CĂN GIỮA NẾU MÀN HÌNH RỘNG HƠN 1200PX */
+  padding: 0 20px; 
+}
+
+.searchContainer {
+  /* ... giữ nguyên ... */
+  flex-grow: 1; 
+  display: flex;
+  justify-content: flex-start; 
+  
+}
+
+.headerContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* vùng trống bên trái để cân bằng */
+.leftSpace {
+  width: 150px;   /* bằng gần bằng độ rộng authContainer */
+}
+
+/* container tìm kiếm nằm giữa */
+.searchContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;   /* 👈 CHO Ô TÌM KIẾM VÔ GIỮA */
+}
+
+.searchInput {
+  width: 300px;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background-color: white;   /* 👈 nền trắng */
+  color: black;           
+}
+
+.authContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.authButton {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  background-color: white;   /* 👈 nền trắng */
+  color: black;              /* 👈 chữ đen */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.authButton:hover {
+  background-color: #f0f0f0; /* 👈 Hover nhẹ */
+}
+
+/* ... */

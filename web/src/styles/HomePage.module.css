@@ -1,0 +1,21 @@
+/* D:\Python\web\styles\HomePage.module.css */
+
+.mainContent {
+    /* Đã được căn giữa nhờ justify-content: center */
+    /* ... giữ nguyên các thuộc tính background ... */
+    padding: 50px 20px; 
+    min-height: calc(100vh - 100px); 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.cardContainer {
+    /* ⭐ MAX-WIDTH này đảm bảo các card không kéo dài ra ngoài giới hạn */
+    max-width: 1200px; 
+    width: 100%;
+    display: flex;
+    gap: 20px; 
+}
+
+/* ... */

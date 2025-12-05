@@ -1,0 +1,48 @@
+/* D:\Python\web\styles\Navbar.module.css */
+
+.navBar {
+  /* Navbar chiếm toàn bộ chiều ngang */
+  width: 100%;
+  display: flex;
+  /* ⭐ CĂN GIỮA NỘI DUNG CONTAINER BÊN TRONG */
+  justify-content: center; 
+  background-color: #FFFFFF; 
+  border: #000000 1px solid ;
+  height: 40px;
+}
+
+/* ⭐ Dùng để giới hạn chiều rộng VÀ CĂN GIỮA NỘI DUNG */
+.navContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Phải giống với Header */
+  width: 100%;
+  margin: 0 auto; /* ĐẢM BẢO CĂN GIỮA */
+  padding: 0 20px; 
+}
+
+/* ... các style khác ... */
+.navLinks {
+  display: flex;
+  gap: 25px;   /* 👈 tăng số này để chữ cách xa nhau */
+}
+
+.navLinks a {
+  color: #000000;
+  text-decoration: none;
+  padding: 6px 10px;
+  transition: 0.2s;
+}
+
+.navLinks a.active {
+  padding: 6px 12px;
+  border-radius: 8px;
+
+  /* 👇 Bóng tối xung quanh để thấy rõ trên nền trắng */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  background-color: rgba(0, 0, 0, 0.05); /* nền xám rất nhẹ */
+  color: black;  /* cho phù hợp nền trắng */
+}
+
