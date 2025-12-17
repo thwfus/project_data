@@ -1,0 +1,81 @@
+/* D:\Python\web\styles\Header.module.css */
+
+.header {
+  /* Header chiếm toàn bộ chiều ngang */
+  width: 100%;
+  display: flex; 
+  /* ⭐ CĂN GIỮA NỘI DUNG CONTAINER BÊN TRONG */
+  justify-content: center; 
+  align-items: center; 
+  height: 60px; 
+  background: linear-gradient(135deg, #ffffff 0%, #bde2fc 100%); 
+  color: white; 
+}
+
+/* ⭐ Dùng để giới hạn chiều rộng VÀ CĂN GIỮA NỘI DUNG */
+.headerContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Đẩy Logo sang trái, Auth sang phải */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative; /* ⭐ QUAN TRỌNG: Làm gốc tọa độ cho ô Search */
+  height: 100%;
+}
+
+.searchContainer {
+  /* Khóa vị trí ở giữa Wrapper */
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%); /* Căn lề chuẩn giữa */
+  
+  display: flex;
+  justify-content: center;
+  pointer-events: none; /* Để không che khuất các click xung quanh container */
+}
+
+.logoImage {
+  width: 130px;
+  height: 80px;
+}
+
+
+.searchInput {
+  width: 300px;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  pointer-events: auto; /* Cho phép gõ chữ bình thường */
+  transition: width 0.3s ease;
+}
+
+.searchInput:focus {
+  width: 350px; /* Hiệu ứng giãn ra nhẹ khi click vào */
+  outline: none;
+}
+
+.authContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.authButton {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 2px solid #000000;
+  background-color: white;   /* 👈 nền trắng */
+  color: black;              /* 👈 chữ đen */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.authButton:hover {
+  background-color: #f0f0f0; /* 👈 Hover nhẹ */
+}
+
+/* ... */

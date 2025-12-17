@@ -1,0 +1,76 @@
+.pageWrapper {
+  width: 100%;
+  background: #f3fbfe;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.pageTitle {
+  text-align: center;
+  color: #1565c0;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* Container cho 7 box */
+.infoGrid {
+  display: grid;
+  /* Tự động chia cột: tối thiểu 280px mỗi box */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px;
+}
+
+.infoBox {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.infoBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: #1565c0;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.infoBox h3 {
+  color: #1e293b;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.infoBox p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Nếu có 7 box, box cuối cùng có thể chiếm hết hàng trên màn hình lớn nếu muốn */
+@media (min-width: 1200px) {
+  .infoGrid {
+    grid-template-columns: repeat(4, 1fr); /* Hàng 1 có 4 box, hàng 2 có 3 box */
+  }
+}

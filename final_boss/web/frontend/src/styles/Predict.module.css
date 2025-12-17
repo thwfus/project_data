@@ -1,0 +1,107 @@
+.pageWrapper {
+  width: 100%;
+  background: #f3fbfe;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  color: #1565c0;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #d6eeff 0%, #ffffff 100%);
+}
+
+.legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 10px;
+  color: #1565c0;
+}
+
+/* Chia lưới: 2 cột trên màn hình máy tính, 1 cột trên điện thoại */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fieldItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input, .select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus, .select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.submitBtn {
+  display: block;      /* Quan trọng: Để margin auto có tác dụng */
+  margin-left: auto;   /* Căn giữa tự động bên trái */
+  margin-right: auto;  /* Căn giữa tự động bên phải */
+  width: 50%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #2e7d32; /* Màu xanh lá cây y tế */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  margin-top: 10px;
+}
+
+.submitBtn:hover {
+  background-color: #1b5e20;
+}
+
+.submitBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

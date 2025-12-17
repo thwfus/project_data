@@ -1,0 +1,87 @@
+.pageWrapper {
+  width: 100%;
+  background: #f3fbfe;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #d6eeff 0%, #ffffff 100%);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #1565c0;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #546e7a;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #2e7d32; /* Màu xanh lá cây y tế */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.ctaButton:hover {
+  background-color: #1b5e20;
+  transform: translateY(-2px);
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border: 1px solid #eee;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}

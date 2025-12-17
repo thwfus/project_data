@@ -1,0 +1,77 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  background-color: #FFFFFF; 
+  border-bottom: 1px solid #e2e8f0; /* Viền dưới nhẹ nhàng hơn màu đen */
+  height: 60px; /* Tăng chiều cao một chút để trông thoáng hơn */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px; /* Tăng khoảng cách giữa các link */
+}
+
+.navLinks a {
+  color: #000000; /* Màu xám đậm cho chữ */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  font-size: 15px;
+}
+
+/* ⭐ Trạng thái Active: Tinh tế và Hiện đại */
+.navLinks a.active {
+  color: #1565c0; /* Màu xanh y tế chủ đạo */
+  background-color: #f0f7ff; /* Nền xanh cực nhẹ */
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px rgba(21, 101, 192, 0.1); /* Viền mờ bên trong */
+}
+
+.navLinks a:hover:not(.active) {
+  color: #1565c0;
+}
+
+/* ⭐ Style cho phần Cờ (Language Switcher) */
+.langWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #f1f5f9;
+  transition: background-color 0.2s;
+}
+
+.langWrapper:hover {
+  background-color: #f8fafc;
+}
+
+.flagIcon {
+  width: 24px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.langText {
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+}
