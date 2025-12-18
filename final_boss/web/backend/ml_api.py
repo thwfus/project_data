@@ -9,7 +9,7 @@ app = FastAPI()
 BASE_DIR = Path(__file__).resolve().parent
 pipe = joblib.load(BASE_DIR / "logreg_pipeline.pkl")
 
-# 21 cột theo đúng thứ tự bạn in ra
+# 21 cột theo đúng thứ tự in ra
 FEATURES = [
     'HighBP','HighChol','CholCheck','BMI','Smoker','Stroke',
     'HeartDiseaseorAttack','PhysActivity','Fruits','Veggies',

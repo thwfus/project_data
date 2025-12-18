@@ -18,6 +18,12 @@
 --
 -- Table structure for table `Dim_HealthCareAccess`
 --
+CREATE DATABASE IF NOT EXISTS KiThuatDuLieu
+  DEFAULT CHARACTER SET utf8mb4
+  DEFAULT COLLATE utf8mb4_0900_ai_ci;
+
+USE KiThuatDuLieu;
+
 
 DROP TABLE IF EXISTS `Dim_HealthCareAccess`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

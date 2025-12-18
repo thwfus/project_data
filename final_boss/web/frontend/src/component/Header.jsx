@@ -55,7 +55,7 @@ function Header() {
         <div className={styles.logoContainer}>
           <Link to="/">
             <img 
-              src="public/logo_nhom3.png" // Bạn thay đường dẫn ảnh logo của bạn vào đây
+              src="logo_nhom3.png" // Bạn thay đường dẫn ảnh logo của bạn vào đây
               alt="Diabetes Logo" 
               className={styles.logoImage} 
             />
@@ -70,7 +70,7 @@ function Header() {
           />
         </div>
 
-        <div className={styles.authContainer}>
+        <div className={styles.greeting}>
           {user ? (
             <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
               <span>

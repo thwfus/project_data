@@ -256,9 +256,9 @@ if (typeof probability === "number") {
 
           </form>
 
-          <div style={{ marginTop: 12, opacity: 0.75 }}>
+          {/* <div style={{ marginTop: 12, opacity: 0.75 }}>
             URL gọi: <code>/api/diabetes/risk-ai?{qs}</code>
-          </div>
+          </div> */}
 
           {error && <div style={{ marginTop: 12 }}>❌ {error}</div>}
 
@@ -274,17 +274,17 @@ if (typeof probability === "number") {
                 {result.ai_percent ?? "null"} %
               </div>
 
-              <div style={{ opacity: 0.75, marginTop: 6 }}>
+              {/* <div style={{ opacity: 0.75, marginTop: 6 }}>
                 Xác suất (ai_probability):{" "}
                 {result.ai_probability === null || result.ai_probability === undefined
                   ? "null"
                   : Number(result.ai_probability).toFixed(4)}
-              </div>
+              </div> */}
 
-              <details style={{ marginTop: 10 }}>
+              {/* <details style={{ marginTop: 10 }}>
                 <summary>Debug JSON</summary>
                 <pre style={{ whiteSpace: "pre-wrap" }}>{JSON.stringify(result, null, 2)}</pre>
-              </details>
+              </details> */}
             </div>
           )}
         </div>
